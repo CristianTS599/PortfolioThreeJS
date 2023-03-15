@@ -4,10 +4,328 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <title>Cristians Portfolio</title>
   </head>
   <body>
     <canvas id="bg"></canvas>
-    <script type="module" src="/main.js"></script>
+    <main>
+      <h1 hidden>Portfolio Home Page</h1>
+      <div id="navbar">
+        <nav class="navbar navbar-expand-lg">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a id="home" class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a id="about" class="nav-link" href="#About">About</a>
+            </li>
+            <li id="contact" class="nav-item active">
+              <a id="contact" class="nav-link" href="views/contact.html"
+                >Contact</a
+              >
+            </li>
+            <li id="projectsli" class="nav-item active">
+              <a id="projectsa" class="nav-link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row heading-row light-text">
+          <div class="col-3 heading-img">
+            <img
+              class="image-self"
+              src="./images/myimages/cts.jpg"
+              alt="Photo of myself, Cristian Torres Salazar"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="col heading-details">
+            <div class="row">
+              <h2>Cristian Torres Salazar</h2>
+              <p class="details-text">Tualatin, OR</p>
+              <a href="https://www.linkedin.com/in/cristiants/">Linkedin</a>
+            </div>
+          </div>
+        </div>
+        <div class="row light-text">
+          <h2 id="About">About Me</h2>
+          <p class="lead">
+            Hello, My name is Cristian! I'm an undergraduate student at Portland
+            State University studying to receive a Bachelors in Computer Science
+            with a Minor in Business Administration. My immediate goals are to
+            master full stack development from the low level fundamentals behind
+            web configuration up to the design of the user experience while
+            building up my theoretical understanding of more complex topics in
+            the software Security and Finance sectors to,long term, fully
+            venture into the security and finance abstractions of software. I
+            was brought up with a passion for the automotive industry and
+            curiosity with the ins and outs of finance. This experience is the
+            root of my interests outside of software where I set goals to learn
+            from automotive projects and personal investments in a way
+            applicable to my software ventures.
+          </p>
+          <h2 id="AboutProfessional">Industry Experience</h2>
+          <p class="lead">
+            The journey I have been on in respect to my technical career has
+            been an interesting and perspective setting experience. I have been
+            fortunate to occupy two internships, the first at JouleSmart
+            Solutions where I maintained the official title of
+            <i>Wiring Technician I</i> but internally worked with the Electrical
+            Engineering (EE) group on development projects and site
+            configurations as an EE Intern. Secondly, and my current position
+            for two years now, I have been occupying a role at Microchip
+            Technology Inc. as a Software Engineering Intern where I work
+            directly with the Enterprise Applications lead Engineers and
+            department Software Engineers in the development of new software
+            systems and modernization of legacy systems using the .NET and
+            ASP.NET Framework.
+          </p>
+          <h2 id="AboutLF">Languages and Frameworks</h2>
+          <p class="lead indent-1">
+            C#, ASP.NET, Javascript, React.js Python, Html, Three.js, Express,
+            c++, c, XML
+          </p>
+        </div>
+        <div class="card card-spacing">
+          <div id="cards" class="card-header"><h3>Education</h3></div>
+          <div class="card-body">
+            <div class="row section-heading">
+              <div class="col-6">
+                <h4 class="card-title">Portland State University</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Portland, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>9/19 - Present</p>
+              </div>
+            </div>
+            <p class="card-text indent-1">
+              Bachelors in Computer Science in progress
+            </p>
+            <p class="card-text indent-2">
+              Business Administration Minor Complete
+            </p>
+            <p class="card-text indent-2">Graduation Date: Aug, 2023</p>
+            <p class="card-text indent-2">GPA: 3.56</p>
+            <div class="row section-heading section-spacing">
+              <div class="col-6">
+                <h4 class="card-title">Mt. Hood Community College</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Gresham, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>9/16 - 9/19</p>
+              </div>
+            </div>
+            <p class="card-text indent-1">Engineering Prerequisites</p>
+            <div class="row section-heading section-spacing">
+              <div class="col-6">
+                <h4 class="card-title">UL Certification</h4>
+              </div>
+            </div>
+            <p class="card-text indent-1">
+              Certified by UL Knowledge Solutions Training in Industrial Control
+              Panels UL508A and Short Circuit Current Ratings
+            </p>
+          </div>
+        </div>
+        <div class="card card-spacing">
+          <div class="card-header"><h3>Experience</h3></div>
+          <div class="card-body">
+            <div class="row section-heading">
+              <div class="col-6">
+                <h4 class="card-title">Microchip Technology Inc. (MCHP)</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Gresham, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>03/21 - Present</p>
+              </div>
+            </div>
+            <div>
+              <p class="card-text indent-1"><b>Software Engineer Intern</b></p>
+              <ul>
+                <li class="indent-1">
+                  Utilize Full Stack Web Development principles to maintain,
+                  develop, and improve production critical web applications for
+                  new and legacy systems.
+                </li>
+                <li class="indent-1">
+                  Communicated in a team setting to generate and provide project
+                  updates to Head Software Engineers.
+                </li>
+                <li class="indent-1">
+                  Adopted Agile Software Development Cycle philosophies to
+                  gather requirements, design and implement multilayer software
+                  systems, and execute complete testing via Unit / Systems Tests
+                  all while documenting each stage.
+                </li>
+                <li class="indent-1">
+                  Design and refactor slowing solutions with efficient manners
+                  of moving large quantities of data.
+                </li>
+                <li class="indent-1">
+                  Train new coming Engineers / Interns on current systems.
+                </li>
+                <li class="indent-1">
+                  Present new and modern full stack development strategies to
+                  head engineers.
+                </li>
+              </ul>
+            </div>
+            <div class="row section-heading">
+              <div class="col-6">
+                <h4 class="card-title">Portland State University</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Portland, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>12/19 - 7/21</p>
+              </div>
+            </div>
+            <p class="card-text indent-1">
+              Electronics Prototyping Lab (EPL) manager.
+            </p>
+            <div class="row section-heading section-spacing">
+              <div class="col-6">
+                <h4 class="card-title">JouleSmart Solutions Inc.</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Tigard, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>6/18 - 10/19</p>
+              </div>
+            </div>
+            <div>
+              <p class="card-text indent-1"><b>Wiring Technician</b></p>
+              <ul>
+                <li class="indent-1">Process Documentation.</li>
+                <li class="indent-1">Quality check.</li>
+                <li class="indent-1">Circuit board soldering.</li>
+                <li class="indent-1">
+                  Wire and configure Industrial Control Panels(ICP) and HVAC
+                  assemblies using schematics.
+                </li>
+                <li class="indent-1">
+                  Connect to ICP components locally/remotely via Ethernet and IP
+                  communication.
+                </li>
+                <li class="indent-1">
+                  Setup: Software, firmwares, Modbus network, IP Gateway
+                  communications.
+                </li>
+                <li class="indent-1">
+                  Wire, configure and test Variable Frequency Drives and heat
+                  pump controllers.
+                </li>
+              </ul>
+            </div>
+            <div class="row section-heading section-spacing">
+              <div class="col-6">
+                <h4 class="card-title">Margarita Factory</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Beaverton, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>1/20 - 3/21</p>
+              </div>
+            </div>
+            <p class="card-text indent-1">Serving</p>
+            <div class="row section-heading section-spacing">
+              <div class="col-6">
+                <h4 class="card-title">Multnomah Falls Lodge</h4>
+              </div>
+              <div class="col-3 text-right">
+                <p>Corbett, OR</p>
+              </div>
+              <div class="col-3 text-right">
+                <p>2/15 - 9/19</p>
+              </div>
+            </div>
+            <p class="card-text indent-1">
+              Serving, Bussing, Patio Grill Cook, Food Prep, Dishwashing
+            </p>
+          </div>
+        </div>
+        <div id="projects" class="card section-spacing">
+          <div class="card-header"><h3>Projects</h3></div>
+          <div class="card-body">
+            <div class="row section-heading">
+              <div class="col-6">
+                <h4 class="card-title">Industry Projects (MCHP)</h4>
+              </div>
+            </div>
+            <ul>
+              <li class="indent-1">
+                Fully Generic MVC Web Application designed to dynamically
+                process data based on runtime characteristics. System completed
+                alongside my superiors and fellow interns.
+              </li>
+              <li class="indent-1">
+                Data processing system abstracted into a library to be used by
+                MVC App above.
+              </li>
+              <li class="indent-1">
+                Complete refactor and upgrade of automated paging application
+                completed for the Environmental Health & Safety department.
+              </li>
+              <li class="indent-1">
+                Transitioned into and adopted Agile development philosophies.
+              </li>
+              <li class="indent-1">
+                Dynamic csv parser designed to monitor production tool csv data
+                sets via a windows service and process those data points to the
+                correct database table based on runtime characteristics.
+              </li>
+            </ul>
+            <div class="row section-heading section-spacing">
+              <div class="col-6">
+                <h4 class="card-title">Class Projects</h4>
+              </div>
+            </div>
+            <p class="card-text indent-1"><b>FTP Client (CLI)</b></p>
+            <p class="card-text indent-2">
+              Contributed to the design and implementation of a FTP Client via a
+              Command Line Interface with fellow classmates.
+            </p>
+            <p class="card-text indent-2">
+              <a href="https://github.com/MattMoradi/FTP.NET"
+                >Github: FTP CLient</a
+              >
+            </p>
+            <p class="card-text indent-1"><b>Personal Portfolio Website</b></p>
+            <p class="card-text indent-2">
+              Designed and implemented this portfolio using html, css, and
+              javascript.
+            </p>
+            <p class="card-text indent-2">
+              <a href="https://github.com/CristianTS599/Porfolio"
+                >Github: Porfolio</a
+              >
+            </p>
+            <p class="card-text indent-1"></p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <p>2023 - Cristian Torres Salazar</p>
+      </footer>
+    </main>
   </body>
 </html>

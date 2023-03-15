@@ -3,3 +3,98 @@ canvas {
   top: 0;
   left: 0;
 }
+
+.card {
+  background-color: #0000;
+  color: #fff;
+  border-color: #fff;
+}
+
+main {
+  position: absolute;
+  backdrop-filter: blur(5px);
+  margin-top: 400px;
+  margin-left: 500px;
+}
+
+.light-text {
+  color: #fff;
+}
+
+.card-header {
+  border-color: #fff;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+}
+
+a {
+  color: #ffd700;
+}
+
+#navbar {
+  background-color: #000a4d;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+/*Check validity below*/
+.image-self {
+  border-radius: 100%;
+}
+
+.heading-row {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.heading-img {
+  width: 300px;
+}
+
+.heading-details {
+  width: 400px;
+}
+
+.card-body > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.indent-1 {
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+.indent-2 {
+  margin-left: 85px;
+}
+
+.text-right {
+  text-align: right;
+  font-weight: 500;
+}
+
+.section-heading {
+  height: 30px;
+}
+
+.section-spacing {
+  margin-top: 20px;
+}
+
+.details-text {
+  font-weight: 500;
+  font-size: larger;
+}
+
+.card-spacing {
+  margin-top: 30px;
+}
