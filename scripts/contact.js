@@ -117,15 +117,19 @@ const planet6 = new THREE.Mesh(
 );
 planet6.position.z = 300;
 planet6.position.x = 200;
+planet6.position.y = 30;
 
 const planet6Ring = new THREE.Mesh(
-  new THREE.RingGeometry(6, 150, 8, 8, 0, 6.2831),
+  new THREE.RingGeometry(70, 100, 30, 8, 0, 6.2831),
   new THREE.MeshBasicMaterial({
-    color: 0xfff,
+    color: 0xb87333,
+    wireframe: true,
   })
 );
 planet6Ring.position.z = 300;
 planet6Ring.position.x = 200;
+planet6Ring.position.y = 30;
+planet6Ring.rotateX(96);
 
 const planet7 = new THREE.Mesh(
   new THREE.SphereGeometry(50, 32, 16, 0, 6.2831, 0, 3.1415),
@@ -171,7 +175,8 @@ function animate() {
   planet3.rotation.y += 0.005;
   planet4.rotation.y += 0.009;
   planet5.rotation.y += 0.005;
-  planet6.rotation.y += 0.005;
+  planet6.rotation.y += 0.01;
+  planet6Ring.rotation.z += 0.008;
   planet7.rotation.y += 0.005;
   planet8.rotation.y += 0.005;
 

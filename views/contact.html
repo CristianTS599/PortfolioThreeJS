@@ -16,5 +16,63 @@
   </head>
   <body>
     <canvas id="contactCanvas"></canvas>
+    <div class="html-content">
+      <nav class="navbar navbar-expand-lg">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a id="home" class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a id="about" class="nav-link" href="../index.html#about">About</a>
+          </li>
+          <li id="projectsli" class="nav-item active">
+            <a id="projectsa" class="nav-link" href="../index.html#projects"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1 hidden>Contact Page</h1>
+      <div id="test" class="container-fluid contact-header">
+        <h2 class="cheader-text">Thanks For Visiting!</h2>
+      </div>
+      <div id="contact-point">
+        <p class="lead">
+          Thank you for taking the time to visit my site! let's connect. Please
+          fill out the fields below so we can align our schedules for a time to
+          get in contact and feel free to follow via the LinkedIn link Here:
+          <a href="https://www.linkedin.com/in/cristiants/">Linkedin</a>
+        </p>
+        <form action="../index.html">
+          <div class="container contact-inputs">
+            <div class="form-group row">
+              <label class="label-padding" for="name">Name:</label>
+              <input type="text" required class="form-control" id="name" />
+            </div>
+            <div class="form-group row">
+              <label class="label-padding" for="email">Email:</label>
+              <input type="email" required class="form-control" id="email" />
+            </div>
+            <div class="form-group row">
+              <label class="label-padding" for="message">Message:</label>
+              <textarea
+                class="form-control"
+                required
+                id="message"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="form-buttons">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-secondary">Clear</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <hr />
+        <p>2023 - Cristian Torres Salazar</p>
+      </footer>
+    </div>
   </body>
 </html>

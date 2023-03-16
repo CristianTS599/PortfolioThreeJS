@@ -3,3 +3,25 @@ canvas {
   top: 0;
   left: 0;
 }
+
+.html-content {
+  position: absolute;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  margin-left: 400px;
+  margin-top: 300px;
+}
+
+input.form-control,
+textarea.form-control {
+  background-color: #0000;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #000a4d;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
