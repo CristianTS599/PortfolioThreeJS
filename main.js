@@ -2,6 +2,7 @@ import './styles/style.css';
 import * as THREE from 'three';
 import { TorusGeometry } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { VRButton } from 'three/addons/webxr/VRButton.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -14,6 +15,10 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
+
+renderer.xr.enabled = true;
+
+//document.querySelector('main').appendChild(VRButton.createButton(renderer));
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
