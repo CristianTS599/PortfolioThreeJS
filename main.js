@@ -60,6 +60,15 @@ const SetPositionParameters = (geo, pX, pY, pZ, rX, rY, rZ) => {
   geo.rotation.z += rZ;
 };
 
+const CameraToMouseScroll = () => {
+  const scalar = document.body.getBoundingClientRect().top;
+  camera.position.x = scalar * -0.0002;
+  camera.position.y = scalar * -0.0002;
+  camera.position.z = scalar * -0.01;
+};
+
+document.body.onscroll = CameraToMouseScroll;
+
 const GetRandomVal = (neg) => {
   let val = Math.floor(Math.random() * 300) + 1;
 
@@ -104,7 +113,6 @@ scene.add(
   geoTorus8,
   geoTorus9
 );
-//scene.add(geoTorus2);
 
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(20, 20, 20);
