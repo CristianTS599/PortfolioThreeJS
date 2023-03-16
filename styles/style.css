@@ -13,7 +13,6 @@ canvas {
 main {
   position: absolute;
   backdrop-filter: blur(5px);
-  margin-top: 400px;
   margin-left: 500px;
 }
 

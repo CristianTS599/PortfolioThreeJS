@@ -10,6 +10,7 @@ canvas {
   backdrop-filter: blur(5px);
   margin-left: 400px;
   margin-top: 300px;
+  width: 1000px;
 }
 
 input.form-control,
@@ -24,4 +25,9 @@ textarea.form-control {
 
 .nav-link:hover {
   color: #ffd700;
+}
+
+.form-buttons {
+  text-align: center;
+  margin-top: 30px;
 }
