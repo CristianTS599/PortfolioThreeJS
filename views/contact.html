@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="../public/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "../build/three.module.js",
+          "three/addons/": "./jsm/"
+        }
+      }
+    </script>
     <script type="module" src="../scripts/contact.js"></script>
     <link rel="stylesheet" href="../styles/contact.css" />
     <link
@@ -12,6 +20,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+
     <title>Contact Page</title>
   </head>
   <body>
